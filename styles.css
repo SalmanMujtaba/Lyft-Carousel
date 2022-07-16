@@ -1,0 +1,61 @@
+:root {
+  --background-color: rgb(244, 244, 250);
+  --primary-color: rgb(12, 11, 49);
+  --heading-size-sm: 48px;
+  --heading-size-md: 70px;
+  --heading-size-lg: 92px;
+}
+
+.w100 {
+  font-weight: 100;
+}
+
+.w200 {
+  font-weight: 200;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  display: block;
+  overflow: hidden;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+main {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: unset;
+    margin: unset;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    width: unset;
+    margin: unset;
+    padding: 20px;
+  }
+}
