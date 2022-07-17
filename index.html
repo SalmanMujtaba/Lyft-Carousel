@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./script.js"></script>
   <link href="./styles.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <!-- <link rel="icon " type="image/x-icon " href="favicon.ico "> -->
 
   <!-- <link href="./styles.css " rel="stylesheet ">
@@ -20,7 +20,55 @@
 <body>
   <main>
     <div class="layout">
+      <div class="header">
+        <h3>DRIVE WITH LYFT CALIFORNIA</h3>
+        <div><span class="header__location-pin"> <a class="header__link">Not going to be a driver in
+              California? </a>
+          </span></div>
+      </div>
       <h1>Drive with Lyft California</h1>
+      <form id="form" class="form" novalidate>
+        <div class="form__group">
+          <label for="firstname">First Name</label>
+          <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
+          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
+              alt="close button" src="./assets/close-icon.svg"></button>
+          <p class="input-error"><img src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">First name is a
+              required
+            </span></p>
+        </div>
+        <div class=" form__group">
+          <label for="firstname">Last Name</label>
+          <input id="lastname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
+          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
+              alt="close button" src="./assets/close-icon.svg"></button>
+          <p class="input-error"><img src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">Last name is a
+              required
+            </span></p>
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input id="email" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
+          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
+              alt="close button" src="./assets/close-icon.svg"></button>
+          <p class="input-error"><img src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">A valid email
+              is required
+            </span></p>
+        </div>
+        <div class="form__group">
+          <label for="city">City</label>
+          <input id="city" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
+          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
+              alt="close button" src="./assets/close-icon.svg"></button>
+        </div>
+        <div class="form__group">
+          <label for="firstname">Promocode</label>
+          <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
+          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
+              alt="close button" src="./assets/close-icon.svg"></button>
+        </div>
+        <button class="form__submit" type="submit"><span class="color-white">Submit</span></button>
+      </form>
     </div>
   </main>
 </body>
