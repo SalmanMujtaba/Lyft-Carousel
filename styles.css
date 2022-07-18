@@ -31,6 +31,10 @@
   display: flex;
 }
 
+.fcolumn {
+  flex-direction: column;
+}
+
 .w40 {
   width: 40px;
 }
@@ -53,6 +57,10 @@
 
 .ml20 {
   margin-left: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
 }
 
 .mt20 {
@@ -81,6 +89,7 @@ h3 {
 a {
   text-decoration: underline;
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 p {
@@ -97,6 +106,7 @@ body {
   font-weight: 400;
   box-sizing: border-box;
   margin: 0;
+  color: var(--primary-color);
   padding: 0;
   background-color: var(--background-color);
   display: block;
@@ -149,6 +159,11 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   line-height: 22px;
+}
+
+.form__terms {
+  grid-column: 2/3;
+  grid-row: 3/3;
 }
 
 .header__location-pin {
@@ -277,6 +292,11 @@ input:focus {
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
+  .form__terms {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    margin-top: -20px;
+  }
   .input-error {
     font-size: 16px;
     line-height: 22px;
@@ -286,8 +306,10 @@ input:focus {
   }
   form {
     display: grid;
+    place-content: center;
+    grid-auto-rows: min-content;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
   }
   h1 {
     font-size: 60px;

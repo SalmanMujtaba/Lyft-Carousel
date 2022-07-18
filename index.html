@@ -39,7 +39,7 @@
           <label for="firstname">First Name</label>
           <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
           <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" src="./assets/close-icon.svg"></button>
+              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
           <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">First name is
               required
             </span></p>
@@ -48,7 +48,7 @@
           <label for="firstname">Last Name</label>
           <input id="lastname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
           <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" src="./assets/close-icon.svg"></button>
+              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
           <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">Last name is
               required
             </span></p>
@@ -57,7 +57,7 @@
           <label for="email">Email</label>
           <input id="email" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="email" required />
           <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" src="./assets/close-icon.svg"></button>
+              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
           <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">A valid email
               is required
             </span></p>
@@ -66,17 +66,23 @@
           <label for="city">City</label>
           <input id="city" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
           <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" src="./assets/close-icon.svg"></button>
+              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
+          <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">City
+              is required
+            </span></p>
         </div>
-        <div class="form__group">
+        <div class="form__group df fcolumn">
           <label for="firstname">Promo/Referral code (optional)</label>
           <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
           <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" src="./assets/close-icon.svg"></button>
+              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
         </div>
+        <!-- <a class="form__terms" href="#">Terms Apply</a> -->
+
         <button aria-label="submit button for the form" class="form__submit mt20" type="submit"><span
             class="color-white">Submit</span></button>
       </form>
+
       <div class="df mt20">
         <p>
           Already applied or already a driver? </p><a tabinde "0" href="#" aria-label="login" class="ml5">Log in</a>

@@ -14,8 +14,9 @@ function focusElement(e) {
 }
 
 function blurElement(e) {
-  if (e.target.value.trim() === "") {
+  if (e.target.value.trim().length === 0) {
     e.target.previousElementSibling.classList.remove('label-animate');
+    e.target.nextElementSibling.classList.add('hide');
   }
   if (e.target.checkValidity()) {
     e.target.classList.remove("invalid");
@@ -25,13 +26,16 @@ function blurElement(e) {
     e.target.parentElement.classList.add("invalid");
 
   }
-  e.target.nextElementSibling.classList.add('hide');
 }
 
 function remove(event) {
-  console.log(event);
-  // event.target.previousElementSibling.value = "";
-  // event.target.classList.remove('label-animate');
+  let input = event.target.parentElement.previousElementSibling
+  input.value = "";
+  input.previousElementSibling.classList.remove('label-animate');
+  input.nextElementSibling.classList.add('hide');
+  input.setAttribute("aria-invalid", "true");
+  input.parentElement.classList.add("invalid");
+
 }
 
 function validateForm(e) {
