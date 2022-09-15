@@ -19,76 +19,36 @@
 
 <body>
   <main>
-    <div class="layout">
+    <section>
       <div class="header">
-        <h3 class="fw700 f17">DRIVE WITH LYFT CALIFORNIA</h3>
-        <div class="w40"></div>
-        <div><span class="header__location-pin"> <a class="header__link">Not going to be a driver in
-              California? </a>
-          </span></div>
+        <div class="header__text">
+          <h2>A hop, skip, and a jump is just a tap away
+          </h2>
+          <p>Hit the road, or the rails. Find a ride that fits your style and budget.*
+          </p>
+        </div>
+        <div id="button-container" class="header__buttons">
+          <button onclick="prev()" id="button__previous" aria-label="navigate-buttons"><img
+              src="./assets/left-arrow-svgrepo-com.svg" alt="arrow" aria-hidden="true"></button>
+          <button onclick="next()" id="button__next" aria-label="navigate-buttons"><img
+              src="./assets/right-arrow-svgrepo-com.svg" alt="arrow" aria-hidden="true"></button>
+        </div>
       </div>
-      <div class="h24"></div>
-      <h1>Drive with Lyft California</h1>
-      <div class="h24"></div>
-      <h2>New benefits and guaranteed earnings </h2>
-      <h3>Great! We'll need some more information from you to get started.</h3>
-      <div class="h24"></div>
-      <div class="h24"></div>
-      <form id="form" class="form" novalidate>
-        <div class="form__group">
-          <label for="firstname">First Name</label>
-          <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
-          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
-          <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">First name is
-              required
-            </span></p>
+      <div class="container">
+        <div class="card-container">
+          <div class="card">One</div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card">Ten</div>
         </div>
-        <div class=" form__group">
-          <label for="firstname">Last Name</label>
-          <input id="lastname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
-          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
-          <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">Last name is
-              required
-            </span></p>
-        </div>
-        <div class="form__group">
-          <label for="email">Email</label>
-          <input id="email" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="email" required />
-          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
-          <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">A valid email
-              is required
-            </span></p>
-        </div>
-        <div class="form__group">
-          <label for="city">City</label>
-          <input id="city" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
-          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
-          <p class="input-error"><img focussable="false" aria-hidden="true" alt="exclamation mark" src="./assets/exclamation-mark-svgrepo-com.svg"><span class="ml10">City
-              is required
-            </span></p>
-        </div>
-        <div class="form__group df fcolumn">
-          <label for="firstname">Promo/Referral code (optional)</label>
-          <input id="firstname" onfocus="focusElement(event)" onblur="blurElement(event)" class="form-input" type="text" required />
-          <button type="button" onclick="remove(event)" class="form__clear hide"><img aria-hidden="true"
-              alt="close button" focussable="false" src="./assets/close-icon.svg"></button>
-        </div>
-        <!-- <a class="form__terms" href="#">Terms Apply</a> -->
-
-        <button aria-label="submit button for the form" class="form__submit mt20" type="submit"><span
-            class="color-white">Submit</span></button>
-      </form>
-
-      <div class="df mt20">
-        <p>
-          Already applied or already a driver? </p><a tabinde "0" href="#" aria-label="login" class="ml5">Log in</a>
       </div>
-
-    </div>
+    </section>
   </main>
 </body>
 
